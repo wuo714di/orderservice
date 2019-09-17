@@ -1,0 +1,13 @@
+#这个优先级比较高，是application。yml的父类，一般配置名称和客户端配置
+spring:
+  application:
+    name: orderservice
+server:
+  port: 8017
+eureka:
+  client:
+    serviceUrl:                             # 拼成serverUrl出现问题
+      defaultZone: http://peer:8671/eureka/
+    registerWithEureka: true # 注册到注册中心
+    fetchRegistry: true       # 获取注册
+
