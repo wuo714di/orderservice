@@ -16,7 +16,7 @@ import java.util.List;
  * @FeignClient的两种使用方式，现在这种是produceservice是在注册中心注册的名字
  * 另外中是produceservice的服务项目开发跨域请求暴露给订单项目使用
  */
-@FeignClient(value = "produceservice",path = "/product")
+//@FeignClient(value = "produceservice",path = "/product")
    // @FeignClient(value = "productService",url = "127.0.0.1:8015/product")
 public interface ProductsClient {
     @RequestMapping(value = "/getProduct",method = RequestMethod.GET,consumes = MediaType.APPLICATION_JSON_VALUE)
