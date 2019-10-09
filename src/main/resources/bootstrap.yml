@@ -4,10 +4,10 @@ spring:
     name: orderservice
 server:
   port: 8017
-eureka:
-  client:
-    serviceUrl:                             # 拼成serverUrl出现问题
-      defaultZone: http://peer:8671/eureka/
-    registerWithEureka: true # 注册到注册中心
-    fetchRegistry: true       # 获取注册
+#eureka:
+#  client:
+#    serviceUrl:                             # 拼成serverUrl出现问题
+#      defaultZone: http://peer:8671/eureka/
+#    registerWithEureka: true # 注册到注册中心
+#    fetchRegistry: true       # 获取注册
 
